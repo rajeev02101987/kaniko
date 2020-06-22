@@ -7,11 +7,11 @@ env:
 go:
   - "1.14"
 go_import_path: github.com/GoogleContainerTools/kaniko
+arch:
+    - arm64
+    - amd64
 jobs:
   include:
-      arch:
-          - arm64
-          - amd64
     - name: unit-test
       script:
         - make test
