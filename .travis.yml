@@ -9,6 +9,9 @@ go:
 go_import_path: github.com/GoogleContainerTools/kaniko
 jobs:
   include:
+      arch:
+          - arm64
+          - amd64
     - name: unit-test
       script:
         - make test
